@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SampeIn adalah aplikasi web yang membantu penyandang tunarungu dan
+    tunanetra berkomunikasi. Penyandang tunarungu dapat menggunakan
+    fitur mengubah suara menjadi teks untuk memahami lawan bicara.
+    Mereka juga dapat berkomunikasi dengan penyandang tunanetra
+    menggunakan fitur mengubah teks menjadi suara.">
+    <meta name="theme-color" content="#d6e4f3" >
+    <link rel="stylesheet" href="assets/style.min.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="manifest" href="manifest.json">
+    <script src="sw.js"></script>
+    <title>SampeIn</title>
+  </head>
+  <body>
+    <header>
+      <h1>SampeIn</h1>
+      <p>Dengan senang hati menyampaikan pesanmu!</p>
+      <div id="button">
+        <a href="#stt"><button>Suara ke Teks</button></a>
+        <a href="#tts"><button>Teks ke Suara</button></a>
+      </div>
+    </header>
+    <main>
+      <section id="introduction">
+        <h2>Apa itu SampeIn?</h2>
+        <div>
+          <img src="assets/image.png" alt="ilustrasi" />
+          <p>
+            SampeIn adalah aplikasi web yang membantu penyandang tunarungu dan
+            tunanetra berkomunikasi. Penyandang tunarungu dapat menggunakan
+            fitur mengubah suara menjadi teks untuk memahami lawan bicara.
+            Mereka juga dapat berkomunikasi dengan penyandang tunanetra
+            menggunakan fitur mengubah teks menjadi suara.
+          </p>
+        </div>
+      </section>
+      <section id="stt">
+        <h2>Ubah Suara ke Teks</h2>
+        <form action="">
+          <textarea
+            name="textOutput"
+            id="textbox"
+            cols="30"
+            rows="10"
+            placeholder="Tekan tombol 'Mulai Dengarkan' untuk mulai mengubah suara ke teks..."
+            readonly
+          ></textarea>
+          <button id="start-btn" class="success-btn" title="Mulai Dengarkan">
+            <i class="fa-solid fa-microphone"></i> Mulai Dengarkan
+          </button>
+          <button
+            id="stop-btn"
+            class="danger-btn"
+            title="Stop Dengarkan"
+            disabled
+          >
+            <i class="fa-solid fa-microphone-slash"></i> Stop Dengarkan
+          </button>
+          <button id="reset-btn" class="warning-btn" title="Reset">
+            <i class="fa-solid fa-rotate-right"></i> Reset
+          </button>
+          <button id="reply-with-tts" class="info-btn" title="Balas">
+            <i class="fa-solid fa-reply"></i> Ubah Teks ke Suara
+          </button>
+        </form>
+      </section>
+      <section id="tts">
+        <h2>Ubah Teks ke Suara</h2>
+        <form action="">
+          <textarea
+            name="textInput"
+            id="textInput"
+            cols="30"
+            rows="10"
+            placeholder="Mulai ketikkan teks disini..."
+          ></textarea>
+          <button id="play-tts-btn" class="success-btn">
+            <i class="fa-solid fa-volume-high"></i> Putar Suara
+          </button>
+          <button id="reset-btn-tts" class="warning-btn">
+            <i class="fa-solid fa-rotate-right"></i> Reset
+          </button>
+          <button id="reply-with-stt" class="info-btn">
+            <i class="fa-solid fa-reply"></i> Ubah Suara ke Teks
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer><p id="year"></p></footer>
+    <script
+      src="https://kit.fontawesome.com/28a0cf18f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/script.min.js"></script>
+  </body>
+</html>
