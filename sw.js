@@ -1,12 +1,11 @@
 // Deklarasi variabel
 const cacheName = "my-pwa-cache";
 const appShellFiles = [
-  "/manifest.json",
-  "/assets/style.min.css",
-  "/assets/script.min.js",
-  "/fontawesome/css/all.min.css",
-  "/assets/favicon.ico",
-  "/assets/image.png",
+  "https://yusufsugiono.github.io/sampein/manifest.json",
+  "https://yusufsugiono.github.io/sampein/assets/style.min.css",
+  "https://yusufsugiono.github.io/sampein/assets/script.min.js",
+  "https://yusufsugiono.github.io/sampein/assets/favicon.ico",
+  "https://yusufsugiono.github.io/sampein/assets/image.png",
 ];
 
 // Event install
