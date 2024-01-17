@@ -562,7 +562,7 @@
           "sizes": "1024x1024"
         }
       ],
-    "start_url": "/",
+    "start_url": "/sampein",
     "display": "standalone",
     "orientation" : "portrait",
     "background_color": "#d6e4f3",
